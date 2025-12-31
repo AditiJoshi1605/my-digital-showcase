@@ -9,40 +9,40 @@ const Skills = () => {
     {
       title: 'Languages',
       skills: [
-        { name: 'C++', level: 70 },
-        { name: 'Python', level: 85 },
-        { name: 'JavaScript', level: 60 },
-        { name: 'TypeScript', level: 40 },
-        { name: 'Java', level: 75 },
-        { name: 'SQL', level: 80 },
+        { name: 'C++' },
+        { name: 'Python' },
+        { name: 'JavaScript' },
+        { name: 'TypeScript' },
+        { name: 'Java' },
+        { name: 'SQL' },
       ],
     },
     {
       title: 'Frontend',
       skills: [
-        { name: 'React', level: 60 },
-        { name: 'Next.js', level: 50 },
-        { name: 'HTML/CSS', level: 80 },
-        { name: 'Tailwind CSS', level: 70 },
+        { name: 'React' },
+        { name: 'Next.js' },
+        { name: 'HTML/CSS' },
+        { name: 'Tailwind CSS' },
       ],
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', level: 65 },
-        { name: 'Express.js', level: 45 },
-        { name: 'MongoDB', level: 80 },
-        { name: 'PostgreSQL', level: 65 },
-        { name: 'REST APIs', level: 70 },
+        { name: 'Node.js' },
+        { name: 'Express.js' },
+        { name: 'MongoDB' },
+        { name: 'PostgreSQL' },
+        { name: 'REST APIs' },
       ],
     },
     {
       title: 'Tools & Others',
       skills: [
-        { name: 'Git', level: 70 },
-        { name: 'Docker', level: 50 },
-        { name: 'AWS', level: 65 },
-        { name: 'VS Code', level: 95 },
+        { name: 'Git'},
+        { name: 'Docker' },
+        { name: 'AWS'},
+        { name: 'VS Code' },
       ],
     },
   ];
@@ -105,19 +105,6 @@ const Skills = () => {
                     >
                       <div className="flex justify-between text-sm mb-1">
                         <span className="text-secondary-foreground">{skill.name}</span>
-                        <span className="text-muted-foreground font-mono text-xs">{skill.level}%</span>
-                      </div>
-                      <div className="h-1.5 bg-secondary rounded-full overflow-hidden">
-                        <motion.div
-                          className="h-full bg-gradient-to-r from-primary to-primary/60 rounded-full"
-                          initial={{ width: 0 }}
-                          animate={isInView ? { width: `${skill.level}%` } : {}}
-                          transition={{ 
-                            duration: 1, 
-                            delay: categoryIndex * 0.1 + skillIndex * 0.05 + 0.5,
-                            ease: 'easeOut'
-                          }}
-                        />
                       </div>
                     </motion.div>
                   ))}

@@ -14,7 +14,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:aditijoshi1605@email.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${formData.email}`;
+    const mailtoLink = `mailto:aditijoshi1605@gmail.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${formData.email}`;
     window.location.href = mailtoLink;
   };
 
@@ -68,8 +68,8 @@ const Contact = () => {
                   </motion.div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <a href="mailto:your@email.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      aditijoshi1605@email.com
+                    <a href="mailto:your@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      aditijoshi1605@gmail.com
                     </a>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full px-4 py-3 bg-secondary border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-foreground placeholder:text-muted-foreground"
-                placeholder="your@email.com"
+                placeholder="your@gmail.com"
                 required
                 whileFocus={{ scale: 1.02 }}
               />

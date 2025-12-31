@@ -20,8 +20,8 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/aditijoshi1605', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Code2, href: 'https://leetcode.com/aditijoshi1605', label: 'LeetCode' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/aditi-joshi-197950292/?utm_source=share_via&utm_content=profile&utm_medium=member_android', label: 'LinkedIn' },
+    { icon: Code2, href: 'https://leetcode.com//u/Aditi_Joshi1605/', label: 'LeetCode' },
   ];
 
   return (

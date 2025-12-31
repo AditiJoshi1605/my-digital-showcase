@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code2, Mail } from 'lucide-react';
+import { Github, Linkedin, Code2, Mail, FileDown } from 'lucide-react';
 
 const Hero = () => {
   const socialLinks = [
@@ -68,8 +68,16 @@ const Hero = () => {
               View Projects
             </a>
             <a
+              href="/resume.pdf"
+              download
+              className="px-8 py-3 border border-primary text-primary font-mono font-semibold rounded-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
+            >
+              <FileDown className="w-4 h-4" />
+              Download Resume
+            </a>
+            <a
               href="#contact"
-              className="px-8 py-3 border border-primary text-primary font-mono font-semibold rounded-lg hover:bg-primary/10 transition-all duration-300"
+              className="px-8 py-3 border border-border text-muted-foreground font-mono font-semibold rounded-lg hover:border-primary hover:text-primary transition-all duration-300"
             >
               Get In Touch
             </a>

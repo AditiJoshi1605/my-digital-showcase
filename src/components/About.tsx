@@ -8,8 +8,8 @@ const About = () => {
   const { ref, isInView } = useScrollAnimation();
 
   const stats = [
-    { value: 500, suffix: '+', label: 'Problems Solved' },
-    { value: 20, suffix: '+', label: 'Projects Built' },
+    { value: 200, suffix: '+', label: 'Problems Solved' },
+    { value: 10, suffix: '+', label: 'Projects Built' },
     { value: 5, suffix: '+', label: 'Certifications' },
   ];
 
@@ -18,17 +18,17 @@ const About = () => {
       icon: GraduationCap,
       title: 'Education',
       main: 'B.Tech in Computer Science & Engineering',
-      sub: 'Your University Name',
+      sub: 'Graphic Era Hill University,Dehradun,Uttarakhand,India',
     },
     {
       icon: MapPin,
-      title: 'Location',
-      main: 'Your City, India',
+      title: 'Dehradun',
+      main: 'Uttarakhand, India',
     },
     {
       icon: Calendar,
       title: 'Expected Graduation',
-      main: '2026',
+      main: '2027',
     },
   ];
 
@@ -42,7 +42,7 @@ const About = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-primary text-sm">// about me</span>
+          
           <h2 className="text-3xl md:text-4xl font-bold mt-2">
             Who I <span className="text-gradient">Am</span>
           </h2>
@@ -98,11 +98,12 @@ const About = () => {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.5 }}
               >
-                I'm a passionate Computer Science student with a strong foundation in 
+                I’m a B.Tech Computer Science student who enjoys building things that actually work 
+                in the real world. Over time, I’ve developed a strong interest in  
                 <span className="text-primary"> data structures</span>, 
                 <span className="text-primary"> algorithms</span>, and 
                 <span className="text-primary"> web development</span>. 
-                I love transforming ideas into elegant, efficient code.
+                and I like turning ideas into clean, maintainable code.
               </motion.p>
               <motion.p 
                 className="text-muted-foreground leading-relaxed"
@@ -110,9 +111,10 @@ const About = () => {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.6 }}
               >
-                When I'm not coding, you'll find me solving problems on LeetCode, 
-                contributing to open-source projects, or exploring new technologies. 
-                I believe in continuous learning and building solutions that make a difference.
+                Outside of academics and coding projects, I spend time practicing competitive 
+                programming, exploring new tools and frameworks, and learning by building small 
+                side projects. When I’m away from the screen, I enjoy listening to music, 
+                staying active, and taking short breaks to reset and stay creative.
               </motion.p>
             </Card3D>
 

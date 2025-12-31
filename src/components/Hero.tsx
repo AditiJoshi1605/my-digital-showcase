@@ -5,10 +5,10 @@ import MagneticButton from './MagneticButton';
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/aditijoshi1605', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Code2, href: 'https://leetcode.com/yourusername', label: 'LeetCode' },
-    { icon: Mail, href: 'mailto:your@email.com', label: 'Email' },
+    { icon: Code2, href: 'https://leetcode.com/aditijoshi1605', label: 'LeetCode' },
+    { icon: Mail, href: 'mailto:aditijoshi1605@email.com', label: 'Email' },
   ];
 
   const roles = [
@@ -106,7 +106,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              Your Name
+              Aditi Joshi
             </motion.span>
           </motion.h1>
 
@@ -171,7 +171,7 @@ const Hero = () => {
               View Projects
             </MagneticButton>
             <MagneticButton 
-              href="/resume.pdf"
+              href="/final_resume.pdf"
               download
               className="px-8 py-3 border border-primary text-primary font-mono font-semibold rounded-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
             >

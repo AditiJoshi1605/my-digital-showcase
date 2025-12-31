@@ -9,10 +9,10 @@ const Skills = () => {
     {
       title: 'Languages',
       skills: [
-        { name: 'C++', level: 90 },
+        { name: 'C++', level: 70 },
         { name: 'Python', level: 85 },
-        { name: 'JavaScript', level: 90 },
-        { name: 'TypeScript', level: 85 },
+        { name: 'JavaScript', level: 60 },
+        { name: 'TypeScript', level: 40 },
         { name: 'Java', level: 75 },
         { name: 'SQL', level: 80 },
       ],
@@ -20,42 +20,40 @@ const Skills = () => {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'Next.js', level: 80 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'Redux', level: 75 },
+        { name: 'React', level: 60 },
+        { name: 'Next.js', level: 50 },
+        { name: 'HTML/CSS', level: 80 },
+        { name: 'Tailwind CSS', level: 70 },
       ],
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 85 },
+        { name: 'Node.js', level: 65 },
+        { name: 'Express.js', level: 45 },
         { name: 'MongoDB', level: 80 },
-        { name: 'PostgreSQL', level: 75 },
-        { name: 'REST APIs', level: 90 },
+        { name: 'PostgreSQL', level: 65 },
+        { name: 'REST APIs', level: 70 },
       ],
     },
     {
       title: 'Tools & Others',
       skills: [
-        { name: 'Git', level: 90 },
-        { name: 'Docker', level: 70 },
-        { name: 'Linux', level: 75 },
+        { name: 'Git', level: 70 },
+        { name: 'Docker', level: 50 },
         { name: 'AWS', level: 65 },
-        { name: 'Postman', level: 85 },
         { name: 'VS Code', level: 95 },
       ],
     },
   ];
 
-  const codingProfiles = [
-    { name: 'LeetCode', url: 'https://leetcode.com/yourusername', badge: '500+ Problems', color: 'from-amber-500 to-orange-500' },
+  /*const codingProfiles = [
+    { name: 'LeetCode', url: 'https://leetcode.com/aditijoshi1605', badge: '500+ Problems', color: 'from-amber-500 to-orange-500' },
     { name: 'CodeForces', url: 'https://codeforces.com/profile/yourusername', badge: 'Specialist', color: 'from-blue-500 to-cyan-500' },
     { name: 'HackerRank', url: 'https://hackerrank.com/yourusername', badge: '5★', color: 'from-green-500 to-emerald-500' },
     { name: 'GeeksforGeeks', url: 'https://geeksforgeeks.org/user/yourusername', badge: '200+ Problems', color: 'from-green-600 to-lime-500' },
   ];
+  */
 
   return (
     <section id="skills" className="py-20 relative" ref={ref}>
@@ -75,7 +73,7 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-primary text-sm">// skills</span>
+          
           <h2 className="text-3xl md:text-4xl font-bold mt-2">
             Tech <span className="text-gradient">Stack</span>
           </h2>
@@ -130,6 +128,7 @@ const Skills = () => {
         </motion.div>
 
         {/* Coding Profiles */}
+        {/*
         <motion.div 
           className="mt-16"
           initial={{ opacity: 0, y: 30 }}
@@ -156,7 +155,7 @@ const Skills = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {/* Hover gradient effect */}
+                //Hover gradient effect
                 <motion.div 
                   className={`absolute inset-0 bg-gradient-to-r ${profile.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
                 />
@@ -173,6 +172,7 @@ const Skills = () => {
             ))}
           </motion.div>
         </motion.div>
+        */}
       </div>
     </section>
   );

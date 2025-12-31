@@ -14,15 +14,14 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:your@email.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${formData.email}`;
+    const mailtoLink = `mailto:aditijoshi1605@email.com?subject=Portfolio Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${formData.email}`;
     window.location.href = mailtoLink;
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/aditijoshi1605', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Code2, href: 'https://leetcode.com/yourusername', label: 'LeetCode' },
-    { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
+    { icon: Code2, href: 'https://leetcode.com/aditijoshi1605', label: 'LeetCode' },
   ];
 
   return (
@@ -40,7 +39,7 @@ const Contact = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-primary text-sm">// contact</span>
+          
           <h2 className="text-3xl md:text-4xl font-bold mt-2">
             Get In <span className="text-gradient">Touch</span>
           </h2>
@@ -70,7 +69,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold">Email</h3>
                     <a href="mailto:your@email.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      your@email.com
+                      aditijoshi1605@email.com
                     </a>
                   </div>
                 </div>
@@ -89,7 +88,7 @@ const Contact = () => {
                   </motion.div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-muted-foreground">Your City, India</p>
+                    <p className="text-muted-foreground">Dehradun, India</p>
                   </div>
                 </div>
               </Card3D>

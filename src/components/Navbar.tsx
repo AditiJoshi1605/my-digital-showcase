@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -76,7 +75,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            &lt;YourName /&gt;
+            &lt;AditiJoshi/&gt;
           </motion.a>
 
           {/* Desktop Menu */}
@@ -105,7 +104,7 @@ const Navbar = () => {
                 )}
               </motion.a>
             ))}
-            <ThemeToggle />
+
             <motion.a
               href="#contact"
               className="px-4 py-2 bg-primary text-primary-foreground font-mono text-sm rounded-md hover:shadow-[0_0_20px_rgba(45,212,191,0.4)] transition-all duration-300"
@@ -118,7 +117,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-            <ThemeToggle />
+          
             <motion.button
               className="text-foreground p-2"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
